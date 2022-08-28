@@ -9,14 +9,13 @@ from numpy import random
 
 
 
-X = random.randint(100 , size=(10,3))
-Y = random.randint(200 , size=(10,1))
-model = LinearRegression().fit(X,Y)
+def predictor(X,Y,Z):
 
-def predictor(x):
     ' in thin function predict given value'
+
+    model = LinearRegression().fit(X,Y)
     
-    pred = model.predict(x)
+    pred = model.predict(Z)
     return pred
 
 

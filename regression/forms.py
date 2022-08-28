@@ -3,6 +3,7 @@ from django import forms
 
 class VariableForm(forms.Form):
     
-    X1 = forms.CharField()
-    X2 = forms.CharField()
-    X3 = forms.CharField()
+    
+    X = forms.CharField(widget=forms.Textarea)
+    Y = forms.CharField(widget=forms.Textarea)
+    Z = forms.CharField()
