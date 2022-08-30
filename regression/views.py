@@ -3,6 +3,8 @@ from .train import predictor
 # Create your views here.
 from .forms import VariableForm
 import numpy as np
+from .models import Regres , parameters
+
 
 def predict(request):
 
@@ -35,9 +37,12 @@ def predict(request):
             Z= np.reshape(Z , (-1,1))
             
             
-            pre = predictor(X,Y,Z)
+            pred , coe , inter = predictor(X,Y,Z)
+
+            print( pred )
+            print(coe)
                  
-            return render(request ,  'result.html' , {'pre': pre})
+            return render(request ,  'result.html')
 
         
 
