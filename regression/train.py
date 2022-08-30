@@ -19,9 +19,9 @@ def predictor(X,Y,Z):
     pred = model.predict(Z)
     fig, ax = plt.subplots( nrows=1, ncols=1 )
     ax.plot(X, Y)
-    fig.savefig('to.png')
+    fig.savefig('static/images/to.png')
     plt.close(fig) 
-    
+
     return pred
 
 
