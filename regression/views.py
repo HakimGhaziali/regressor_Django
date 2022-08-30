@@ -17,8 +17,7 @@ def predict(request):
         form = VariableForm(request.POST)
 
         if form.is_valid():
-            #print(form.cleaned_data)
-            #X = [x for x in form.cleaned_data['X']]
+
             X_list=form.cleaned_data['X'].split(',')
             X_list = [int(i) for i in X_list]
             X= np.array((X_list))
@@ -37,9 +36,8 @@ def predict(request):
             
             
             pre = predictor(X,Y,Z)
-            print(pre)
                  
-            return render(request ,  'home.html' , {'form': form})
+            return render(request ,  'result.html' , {'pre': pre})
 
         
 
