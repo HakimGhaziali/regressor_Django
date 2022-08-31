@@ -1,11 +1,12 @@
 # Regressor_Django
 in this project Client can send data
 
-![regress1](https://user-images.githubusercontent.com/103022998/187645514-cce39af7-d54c-41b8-835b-10d605530b17.PNG)
+
+![reg1](https://user-images.githubusercontent.com/103022998/187648734-5d2927c8-2d02-496d-b0bc-391fae27fa73.PNG)
 
 
  and regressor predict for Client
  
  
  
-![regress2](https://user-images.githubusercontent.com/103022998/187645551-16bf5996-a5d9-4812-800a-e07dbfc18021.PNG)
+![reg2](https://user-images.githubusercontent.com/103022998/187648780-ca1edecd-2745-4868-9dfe-241db0878d58.PNG)
