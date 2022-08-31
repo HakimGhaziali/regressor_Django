@@ -21,8 +21,9 @@ def predictor(X,Y,Z):
     
     pred = model.predict(Z)
     fig, ax = plt.subplots( nrows=1, ncols=1 )
-    ax.scatter(X, Y)
-    ax.plot(X, model.predict(X))
+    sizes = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])
+    ax.scatter(X, Y , color = '#88c999', alpha=0.5)
+    ax.plot(X, model.predict(X) ,  ls = ':')
     fig.savefig('static/images/to.png')
     plt.close(fig) 
 
