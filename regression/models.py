@@ -14,7 +14,7 @@ class parameters(models.Model):
 
     coe = models.IntegerField()
     intercept = models.IntegerField()
-    name = models.ForeignKey(esm , on_delete=models.CASCADE , related_name='esmesh')
+    
 
 
 
@@ -23,7 +23,7 @@ class Regres(models.Model):
     x = models.PositiveIntegerField()
     y= models.PositiveIntegerField()
     param = models.ForeignKey(parameters , on_delete=models.CASCADE , related_name='params')
-    name = models.ForeignKey(esm , on_delete=models.CASCADE , related_name='esme')
+    name = models.ManyToManyField(esm  , related_name='esme')
 
     
 

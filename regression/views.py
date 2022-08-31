@@ -41,8 +41,12 @@ def predict(request):
 
             print( pred )
             print(coe)
-                 
-            return render(request ,  'result.html')
+            context = {'pred':pred[0,0] , 'coe':coe[0,0] , 'inter': inter}
+
+
+            print(context)
+        
+            return render(request ,  'result.html' , context=context )
 
         
 
